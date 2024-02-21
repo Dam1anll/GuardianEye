@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoIntegrador.Views.InicioSesionView"
+             BackgroundColor="#26292d"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout BackgroundColor="#26292d">
+
+        <Image Source="https://i.ibb.co/82nZkhK/Logo.png" Margin="0,70,0,0" WidthRequest="100"/>
+        
+        <Label Text="Guardian Eye" HorizontalTextAlignment="Center" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+        
+        <StackLayout Margin="30,10,30,0">
+            
+            <Label Text="Inicio de Sesion" TextColor="White" FontSize="25" FontAttributes="Bold"/>
+            <Label Text="Hola! Que gusto de verte." TextColor="White" FontSize="20" Margin="0,0,0,20"/>
+
+            <Label Text="Correo Electrónico:" TextColor="#1da1f2" FontAttributes="Bold" FontSize="15"/>
+            <Entry Placeholder="Ingresa tu correo" TextColor="White" PlaceholderColor="White" FontSize="15"/>
+
+            <Label Text="Contraseña:" TextColor="#1da1f2" FontAttributes="Bold" FontSize="15"/>
+            <Entry Placeholder="Ingresa tu contraseña" TextColor="White" PlaceholderColor="White" IsPassword="True" FontSize="15"/>
+
+            <StackLayout Orientation="Horizontal" Margin="0,0,0,0">
+                <CheckBox Color="#1da1f2"/>
+                <Label Text="Recuerdame" TextColor="White" Margin="0,5,0,0"/>
+            </StackLayout>
+
+        </StackLayout>
+
+        <Button Text="Iniciar Sesión" BackgroundColor="#033076" TextColor="White" CornerRadius="30" Margin="30,20,30,0" Command="{Binding IrAHomeCommand}"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Olvidaste tu contraseña?" TextColor="#1da1f2" FontSize="13" Margin="30,50,0,0" HorizontalOptions="Start" TextTransform="None" TextDecorations="Underline" Grid.Row="0" Grid.Column="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding IrSolicitudCommand}"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label Text="Registrate" TextColor="#1da1f2" Grid.Column="1" FontSize="13" Margin="0,50,50,0" HorizontalOptions="End" TextTransform="None" TextDecorations="Underline" Grid.Row="0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding IrARegistroCommand}"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </Grid>
+      
+    </StackLayout>
+    
+</ContentPage>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoIntegrador.Views.RecuperarContraseña.CambioContraseñaView">
+
+    <StackLayout BackgroundColor="#26292d">
+
+        <StackLayout Margin="30,10,30,0">
+
+                <Label Text="Cambio de contraseña" TextColor="White" FontSize="25" FontAttributes="Bold" Margin="0,20,0,30"/>
+              
+                <Label Text="Ingrese Nueva Contraseña" TextColor="#1da1f2" FontAttributes="Bold" FontSize="15"/>
+                <Entry Placeholder="Ingrese la nueva Contraseña" TextColor="White" PlaceholderColor="White" Margin="0,0,0,35" FontSize="15"/>
+
+                <Label Text="Confirmar Nueva Contraseña" TextColor="#1da1f2" FontAttributes="Bold" FontSize="15"/>
+                <Entry Placeholder="Confirme la nueva Contraseña" TextColor="White" PlaceholderColor="White" IsPassword="True" Margin="0,0,0,35" FontSize="15"/>
+
+          
+            </StackLayout>
+
+            <Button Text="Confirmar" BackgroundColor="#033076" TextColor="White" CornerRadius="30" Margin="30,20,30,0" Command="{Binding IrinicioSesionCommand}"/>
+
+        </StackLayout>
+
+</ContentPage>

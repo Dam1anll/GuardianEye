@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoIntegrador.Views.RegistroView">
+
+    <ScrollView BackgroundColor="#26292d">
+
+        <StackLayout Margin="30,20,30,0">
+
+            <StackLayout x:Name="nombreLayoutStack">
+                <Label Text="Regístrate" TextColor="White" FontSize="25" FontAttributes="Bold"/>
+                <Label Text="Manten segura tu propiedad!" TextColor="White" FontSize="20" Margin="0,0,0,20"/>
+
+                <Label Text="Nombre:" TextColor="#1da1f2" FontAttributes="Bold" FontSize="15"/>
+                <Entry Placeholder="Ingresa tu nombre" TextColor="White" PlaceholderColor="White" FontSize="15"/>
+
+                <Label Text="Numero de telefono:" TextColor="#1da1f2" FontAttributes="Bold" FontSize="15"/>
+                <Entry Placeholder="Ingresa tu numero de telefono" TextColor="White" PlaceholderColor="White" FontSize="15"/>
+
+                <Button Text="Siguiente" BackgroundColor="#033076" TextColor="White" CornerRadius="30" Margin="10,20,10,0" Clicked="SiguienteNombre_Clicked"/>
+            </StackLayout>
+            
+            <StackLayout x:Name="correoLayoutStack" IsVisible="False">
+                <Label Text="Regístrate" TextColor="White" FontSize="25" FontAttributes="Bold"/>
+                <Label Text="Manten segura tu propiedad!" TextColor="White" FontSize="20" Margin="0,0,0,20"/>
+
+                <Label Text="Correo Electrónico:" TextColor="#1da1f2" FontAttributes="Bold" FontSize="15"/>
+                <Entry Placeholder="Ingresa tu correo electronico" TextColor="White" PlaceholderColor="White" FontSize="15"/>
+
+                <Label Text="Contraseña:" TextColor="#1da1f2" FontAttributes="Bold" FontSize="15"/>
+                <Entry Placeholder="Ingresa tu contraseña" TextColor="White" PlaceholderColor="White" IsPassword="True" FontSize="15"/>
+
+                <Label Text="Confirmar Contraseña:" TextColor="#1da1f2" FontAttributes="Bold" FontSize="15"/>
+                <Entry Placeholder="Ingresa tu contraseña nuevamente" TextColor="White" PlaceholderColor="White" IsPassword="True" FontSize="15"/>
+
+                <Button Text="Registrarse" BackgroundColor="#033076" TextColor="White" CornerRadius="30" Margin="10,20,10,0" Command="{Binding IrAInicioSesionCommand}"/>
+            </StackLayout>
+        </StackLayout>
+
+    </ScrollView>
+    
+</ContentPage>

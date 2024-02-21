@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoIntegrador.Views.CámarasView"
+             Title="Cámaras">
+    <StackLayout>
+        <BoxView Color="#dee2e6" HeightRequest="2" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Margin="0,0,0,-50"/>
+        <Grid Margin="20,10,20,0">
+            <Label Text="Cámara 1" Grid.Row="0" Grid.Column="0" TextColor="White" FontSize="22" VerticalOptions="Center" Margin="25,-220,0,0"/>
+            <Image Source="https://i.ibb.co/wYkLRys/Image-Pasted-2019-09-10-at-17-52-38-png-3.png" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" Margin="0,-40,-30,0" />
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Label Text="Cámara" Grid.Row="0" Grid.Column="0" TextColor="White" FontSize="15" VerticalOptions="Center" Margin="70,-90,0,0"/>
+                <Button Text="Activar" Grid.Row="0" Grid.Column="0" Margin="40,30,0,30" x:Name="btnActivar"  Clicked="BtnActivar_Clicked" BackgroundColor="Green"/>
+                <Button  Text="Desactivar" Grid.Row="1" Grid.Column="0" Margin="40,-30,0,90" x:Name="btnDesactivar" Clicked="BtnDesactivar_Clicked" BackgroundColor="Gray"/>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="2">
+                <Label Text="Sensores" Grid.Row="0" Grid.Column="1" TextColor="White" FontSize="15" VerticalOptions="Center" Margin="-20,0,0,90"/>
+                <Button Text="Activar" Grid.Row="0" Grid.Column="1" Margin="-55,30,0,30" x:Name="btnActivar1"  Clicked="BtnActivar1_Clicked" BackgroundColor="Green"/>
+                <Button Text="Desactivar" Grid.Row="1" Grid.Column="1" Margin="-55,-30,0,90" x:Name="btnDesactivar1" Clicked="BtnDesactivar1_Clicked" BackgroundColor="Gray"/>
+            </Grid>
+        </Grid>
+        <BoxView Color="#dee2e6" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Margin="10,-120,0,-60"/>
+
+        <Grid Margin="20,10,20,0">
+            <Label Text="Cámara 2" Grid.Row="0" Grid.Column="0" TextColor="White" FontSize="22" VerticalOptions="Center" Margin="25,-220,0,0"/>
+            <Image Source="https://i.ibb.co/wYkLRys/Image-Pasted-2019-09-10-at-17-52-38-png-3.png" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" Margin="0,-40,-30,0"/>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Label Text="Cámara" Grid.Row="0" Grid.Column="0" TextColor="White" FontSize="15" VerticalOptions="Center" Margin="70,-90,0,0"/>
+                <Button Text="Activar" Grid.Row="0" Grid.Column="0" Margin="40,30,0,30"/>
+                <Button  Text="Desactivar" Grid.Row="1" Grid.Column="0" Margin="40,-30,0,90"/>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="2">
+                <Label Text="Sensores" Grid.Row="0" Grid.Column="1" TextColor="White" FontSize="15" VerticalOptions="Center" Margin="-20,0,0,90"/>
+                <Button Text="Activar" Grid.Row="0" Grid.Column="1" Margin="-55,30,0,30"/>
+                <Button Text="Desactivar" Grid.Row="1" Grid.Column="1" Margin="-55,-30,0,90"/>
+            </Grid>
+        </Grid>
+        <BoxView Color="#dee2e6" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Margin="10,-100,0,-60"/>
+
+        <Grid Margin="20,10,20,0">
+            <Label Text="Cámara 3" Grid.Row="0" Grid.Column="0" TextColor="White" FontSize="22" VerticalOptions="Center" Margin="25,-220,0,0"/>
+            <Image Source="https://i.ibb.co/wYkLRys/Image-Pasted-2019-09-10-at-17-52-38-png-3.png" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" Margin="0,-40,-30,0"/>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Label Text="Cámara" Grid.Row="0" Grid.Column="0" TextColor="White" FontSize="15" VerticalOptions="Center" Margin="70,-90,0,0"/>
+                <Button Text="Activar" Grid.Row="0" Grid.Column="0" Margin="40,30,0,30"/>
+                <Button  Text="Desactivar" Grid.Row="1" Grid.Column="0" Margin="40,-30,0,90"/>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="2">
+                <Label Text="Sensores" Grid.Row="0" Grid.Column="1" TextColor="White" FontSize="15" VerticalOptions="Center" Margin="-20,0,0,90"/>
+                <Button Text="Activar" Grid.Row="0" Grid.Column="1" Margin="-55,30,0,30"/>
+                <Button Text="Desactivar" Grid.Row="1" Grid.Column="1" Margin="-55,-30,0,90"/>
+            </Grid>
+        </Grid>
+        <BoxView Color="#dee2e6" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Margin="10,-110,20,-70"/>
+
+        <Grid Margin="20,10,20,0">
+            <Label Text="Cámara 4" Grid.Row="0" Grid.Column="0" TextColor="White" FontSize="22" VerticalOptions="Center" Margin="25,-220,0,0"/>
+            <Image Source="https://i.ibb.co/wYkLRys/Image-Pasted-2019-09-10-at-17-52-38-png-3.png" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" Margin="0,-40,-30,0"/>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Label Text="Cámara" Grid.Row="0" Grid.Column="0" TextColor="White" FontSize="15" VerticalOptions="Center" Margin="70,-90,0,0"/>
+                <Button Text="Activar" Grid.Row="0" Grid.Column="0" Margin="40,30,0,30"/>
+                <Button  Text="Desactivar" Grid.Row="1" Grid.Column="0" Margin="40,-30,0,90"/>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="2">
+                <Label Text="Sensores" Grid.Row="0" Grid.Column="1" TextColor="White" FontSize="15" VerticalOptions="Center" Margin="-20,0,0,90"/>
+                <Button Text="Activar" Grid.Row="0" Grid.Column="1" Margin="-55,30,0,30"/>
+                <Button Text="Desactivar" Grid.Row="1" Grid.Column="1" Margin="-55,-30,0,90"/>
+            </Grid>
+        </Grid>
+        <BoxView Color="#dee2e6" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Margin="10,-120,20,0"/>
+
+    </StackLayout>
+</ContentPage>

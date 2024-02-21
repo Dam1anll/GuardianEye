@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoIntegrador.Views.RecuperarContraseña.SolicitudView">
+    
+        <StackLayout BackgroundColor="#26292d">
+            <StackLayout Margin="10,10,0,10">
+                <Image Source="https://i.ibb.co/Wtnp1n9/flecha-izquierda.png" HorizontalOptions="Start" Margin="0,10,0,10">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding RetrocederCommand}" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+
+        <StackLayout>
+
+            <StackLayout Margin="30,10,30,0">
+
+                <Label Text="Recuperar tu cuenta" TextColor="White" FontSize="25" FontAttributes="Bold"/>
+                <Label Text="ingrese tu correo electronico para enviarte tu cambio de contraseña a tu correo" TextColor="White" FontSize="15" Margin="0,0,0,20"/>
+
+                <Label Text="Correo Electrónico:" TextColor="#1da1f2" FontAttributes="Bold" FontSize="15"/>
+                <Entry Placeholder="Ingresa tu correo" TextColor="White" PlaceholderColor="White"/>
+
+            </StackLayout>
+
+            <Button Text="Enviar" BackgroundColor="#033076" TextColor="White" CornerRadius="30" Margin="30,20,30,0" Command="{Binding IrCambioContraseñaCommand}"/>
+         </StackLayout>
+        </StackLayout>
+
+</ContentPage>
