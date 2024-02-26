@@ -16,6 +16,7 @@
                     <Button Text="Activar" Grid.Row="1" Grid.Column="1" x:Name="btnActivar" Clicked="BtnActivar_Clicked" BackgroundColor="Green" Margin="0,-20,0,20"/>
                     <Button  Text="Desactivar" Grid.Row="2" Grid.Column="1" x:Name="btnDesactivar" Clicked="BtnDesactivar_Clicked" BackgroundColor="Gray" Margin="0,-20,0,20"/>
 
+
                     <Label Text="Sensor" Grid.Row="0" Grid.Column="2" TextColor="White" FontSize="15" HorizontalTextAlignment="Center"/>
                     <Button Text="Activar" Grid.Row="1" Grid.Column="2" x:Name="btnActivar1" Clicked="BtnActivar1_Clicked" BackgroundColor="Green" Margin="0,-20,0,20"/>
                     <Button Text="Desactivar" Grid.Row="2" Grid.Column="2" x:Name="btnDesactivar1" Clicked="BtnDesactivar1_Clicked" BackgroundColor="Gray" Margin="0,-20,0,20"/>

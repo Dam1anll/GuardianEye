@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoIntegrador.Android"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoIntegrador.iOS", "ProyectoIntegrador\ProyectoIntegrador.iOS\ProyectoIntegrador.iOS.csproj", "{DD1F96D8-4029-4348-B4D7-3774C2A65B33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoIntegrador", "ProyectoIntegrador\ProyectoIntegrador\ProyectoIntegrador.csproj", "{C78BEAE2-2EE0-44E7-8DDA-0EB4FAE1832D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoIntegrador", "ProyectoIntegrador\ProyectoIntegrador\ProyectoIntegrador.csproj", "{C78BEAE2-2EE0-44E7-8DDA-0EB4FAE1832D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -39,7 +39,7 @@
                 <Button x:Name="btnHistorial" Text="Historial" TextColor="White" FontSize="15" BackgroundColor="#141414"  ImageSource="https://i.ibb.co/9cZCD67/carpeta.png" Command="{Binding IrHistorialCommand}">
                     <Button.Triggers>
                         <Trigger TargetType="Button" Property="IsPressed" Value="True">
-                            <Setter Property="BackgroundColor" Value="{StaticResource SelectedButtonColor}" />
+                            <Setter Property="BackgroundColor" Value="{StaticResource SelectedButtonColor}"/>
                         </Trigger>
                     </Button.Triggers>
                 </Button>
