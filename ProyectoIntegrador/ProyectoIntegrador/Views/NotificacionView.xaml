@@ -4,7 +4,7 @@
              x:Class="ProyectoIntegrador.Views.NotificacionView"
              Title="Notificación">
 
-    <StackLayout BackgroundColor="#26292d">
+    <StackLayout BackgroundColor="#141414">
 
         <StackLayout>
 

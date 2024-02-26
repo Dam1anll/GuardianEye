@@ -4,7 +4,7 @@
              x:Class="ProyectoIntegrador.App">
     <Application.Resources>
         <Style TargetType="NavigationPage">
-            <Setter Property="BarBackgroundColor" Value="#26292d" />
+            <Setter Property="BarBackgroundColor" Value="#141414" />
         </Style>
     </Application.Resources>
 </Application>

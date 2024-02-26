@@ -14,6 +14,8 @@ namespace ProyectoIntegrador.ViewModels
     public class VMInicioSesion : BaseViewModel
     {
         #region VARIABLES
+        private string _correo;
+        private string _contra;
         #endregion
         #region CONTRUCTOR
         public VMInicioSesion(INavigation navigation)
@@ -22,6 +24,16 @@ namespace ProyectoIntegrador.ViewModels
         }
         #endregion
         #region OBJETOS
+        public string Correo 
+        {
+            get { return _correo; }
+            set { SetValue(ref _correo, value); }
+        }
+        public string Contra
+        {
+            get { return _contra; }
+            set { SetValue(ref _contra, value); }
+        }
         #endregion
         #region PROCESOS
         public async Task IrARegistro()
@@ -35,16 +47,21 @@ namespace ProyectoIntegrador.ViewModels
 
         public async Task IrAHome()
         {
+            string correoPredefinido = "damian";
+            string contraPredefinida = "damian";
 
-            await Application.Current.MainPage.Navigation.PopToRootAsync();
-
-            var paginaPrincipal = new NavigationPage(new PaginaPrincipal());
-
-            NavigationPage.SetHasBackButton(paginaPrincipal, false);
-
-            Application.Current.MainPage = paginaPrincipal;
+            if (Correo == correoPredefinido && Contra == contraPredefinida)
+            {
+                await Application.Current.MainPage.Navigation.PopToRootAsync();
+                var paginaPrincipal = new NavigationPage(new PaginaPrincipal());
+                NavigationPage.SetHasBackButton(paginaPrincipal, false);
+                Application.Current.MainPage = paginaPrincipal;
+            }
+            else
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", "Correo o contraseña incorrectos", "Aceptar");
+            }
         }
-
 
         #endregion
         #region COMANDOS

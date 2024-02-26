@@ -16,7 +16,6 @@ namespace ProyectoIntegrador.Views.RecuperarContraseña
 		{
 			InitializeComponent();
 			BindingContext = new VMCambioContraseña(Navigation);
-            NavigationPage.SetHasNavigationBar(this, false);
         }
 	}
 }

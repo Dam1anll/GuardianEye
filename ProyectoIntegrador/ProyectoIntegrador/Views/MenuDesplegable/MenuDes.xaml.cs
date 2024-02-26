@@ -19,6 +19,5 @@ namespace ProyectoIntegrador.Views.MenuDesplegable
             BindingContext = new VMmenuDes(Navigation);
             
         }
-        
     }
 }

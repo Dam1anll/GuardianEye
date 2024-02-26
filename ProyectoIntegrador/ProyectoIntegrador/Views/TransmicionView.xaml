@@ -4,7 +4,7 @@
              x:Class="ProyectoIntegrador.Views.TransmicionView"
              Title="Transmisión">
 
-    <StackLayout BackgroundColor="#26292d">
+    <StackLayout BackgroundColor="#141414">
         <StackLayout>
             <Image Source="https://i.ibb.co/wYkLRys/Image-Pasted-2019-09-10-at-17-52-38-png-3.png" HeightRequest="200">
                 <Image.GestureRecognizers>

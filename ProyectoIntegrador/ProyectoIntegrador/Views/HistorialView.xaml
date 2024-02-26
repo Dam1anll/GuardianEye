@@ -4,7 +4,7 @@
              x:Class="ProyectoIntegrador.Views.HistorialView"
              Title="Historial">
 
-    <StackLayout BackgroundColor="#26292d">
+    <StackLayout BackgroundColor="#141414">
 
         <Frame BackgroundColor="Gray" HeightRequest="20" Margin="20,30,20,0" CornerRadius="5">
             <Label Text="Buscar notificación" TextColor="White" FontSize="17"/>
