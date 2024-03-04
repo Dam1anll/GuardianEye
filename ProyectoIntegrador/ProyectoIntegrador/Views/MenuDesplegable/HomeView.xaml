@@ -11,7 +11,9 @@
 
             <Label Text="Horas con mas notificaciones" FontSize="17" TextTransform="None" TextColor="#1da1f2" FontAttributes="Bold" Margin="0,10,0,0"/>
             <BoxView Color="#dee2e6" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
-            <Image Source="https://i.ibb.co/VNPR30k/Captura-de-pantalla-96.png" HeightRequest="130"/>
+            <StackLayout>
+                <charts:ChartView x:Name="notificationChart" Margin="-40,10,-40,0" HeightRequest="170"/>
+            </StackLayout>
 
             <Label Text="Notificaciones Recientes" TextColor="#1da1f2" FontSize="17" FontAttributes="Bold" Margin="0,10,0,0"/>
             <BoxView Color="#dee2e6" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
