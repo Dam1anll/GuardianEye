@@ -63,11 +63,12 @@ namespace ProyectoIntegrador.Views
             {   Entries = entries, 
                 BackgroundColor = SKColor.Parse("#141414"),
                 LineMode = LineMode.Straight,
-                LineSize = 8,
+                LineSize = 10,
                 PointMode = PointMode.Square,
-                PointSize = 18,
+                PointSize = 20,
                 LabelOrientation = Microcharts.Orientation.Horizontal,
                 ValueLabelOrientation = Microcharts.Orientation.Horizontal,
+                LabelTextSize = 30
             };
 
             notificationChart.Chart = chart;

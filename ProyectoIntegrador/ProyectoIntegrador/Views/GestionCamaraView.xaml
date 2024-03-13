@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoIntegrador.Views.GestionCamaraView">
+
+    <StackLayout BackgroundColor="#141414">
+
+        <StackLayout>
+            <Label Text="Agregar Camara" TextColor="White" FontSize="Title" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            <BoxView Color="#dee2e6" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Margin="20,10,20,0"/>
+
+            <Grid Margin="20,10,20,0">
+                <Label Text="Ubicacion: " Grid.Row="0" Grid.Column="0" TextColor="#1da1f2" FontSize="17" VerticalOptions="Center" FontAttributes="Bold"/>
+                <Entry Grid.Row="0" Grid.Column="1" TextColor="White" FontSize="17" Margin="-70,0,0,0"  Text="{Binding Ubicacion}"/>
+            </Grid>
+
+            <BoxView Color="#dee2e6" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Margin="20,10,20,0"/>
+            <Grid Margin="20,10,20,0">
+                <Label Text="Modelo: " Grid.Row="0" Grid.Column="0" TextColor="#1da1f2" FontSize="17" VerticalOptions="Center" FontAttributes="Bold"/>
+                <Entry Grid.Row="0" Grid.Column="1" TextColor="White" FontSize="17" Margin="-70,0,0,0" Text="{Binding Modelo}"/>
+            </Grid>
+
+            <BoxView Color="#dee2e6" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Margin="20,10,20,0"/>
+            <Grid Margin="20,10,20,0">
+                <Label Text="Estado: " Grid.Row="0" Grid.Column="0" TextColor="#1da1f2" FontSize="17" VerticalOptions="Center" FontAttributes="Bold"/>
+                <Entry Grid.Row="0" Grid.Column="1" TextColor="White" FontSize="17" Margin="-70,0,0,0" Text="{Binding Estado}"/>
+            </Grid>
+
+
+            <Grid>
+                <Button Text="Agregar" BackgroundColor="Green" TextColor="White" CornerRadius="30" Margin="20,20,10,0" Grid.Row="0" Grid.Column="0" Command="{Binding AgregarCamaraCommand}"/>
+            </Grid>
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

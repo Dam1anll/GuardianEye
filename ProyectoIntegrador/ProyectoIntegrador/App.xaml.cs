@@ -8,14 +8,14 @@ namespace ProyectoIntegrador
 {
     public partial class App : Application
     {
-        #pragma warning disable CS0618 // El tipo o el miembro están obsoletos
+        #pragma warning disable CS0618 
         public static MasterDetailPage MasterDet { get; set; }
-        #pragma warning restore CS0618 // El tipo o el miembro están obsoletos
+        #pragma warning restore CS0618 
         public App()
         {
             InitializeComponent();
             Application.Current.UserAppTheme = OSAppTheme.Light;
-            MainPage = new NavigationPage(new InicioSesionView());
+            MainPage = new NavigationPage(new GestionCamaraView());
         }
 
         protected override void OnStart()
